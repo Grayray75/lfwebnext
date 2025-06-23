@@ -1,13 +1,20 @@
 import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
+import DevImage from '/assets/showcase/dev.png';
+import DrawersImage from '/assets/showcase/drawers.png';
+import HypixelImage from '/assets/showcase/hypixel.png';
+import MetaImage from '/assets/showcase/meta.png';
+import ModmenuImage from '/assets/showcase/modmenu.png';
+import WitherImage from '/assets/showcase/wither.png';
+
 const images = [
-    { title: 'Development', link: './assets/showcase/dev.png' },
-    { title: 'Drawers mod', link: './assets/showcase/drawers.png' },
-    { title: 'Hypixel', link: './assets/showcase/hypixel.png' },
-    { title: 'Meta API', link: './assets/showcase/meta.png' },
-    { title: 'Modmenu', link: './assets/showcase/modmenu.png' },
-    { title: 'Wither', link: './assets/showcase/wither.png' }
+    { title: 'Development', link: DevImage },
+    { title: 'Drawers mod', link: DrawersImage },
+    { title: 'Hypixel', link: HypixelImage },
+    { title: 'Meta API', link: MetaImage },
+    { title: 'Modmenu', link: ModmenuImage },
+    { title: 'Wither', link: WitherImage }
 ];
 
 @customElement('lf-showcase-gallery')
