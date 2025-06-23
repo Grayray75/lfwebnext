@@ -2,12 +2,12 @@ import { css, html, LitElement } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 
 const images = [
-    { title: 'Development', link: '/assets/showcase/dev.png' },
-    { title: 'Drawers mod', link: '/assets/showcase/drawers.png' },
-    { title: 'Hypixel', link: '/assets/showcase/hypixel.png' },
-    { title: 'Meta API', link: '/assets/showcase/meta.png' },
-    { title: 'Modmenu', link: '/assets/showcase/modmenu.png' },
-    { title: 'Wither', link: '/assets/showcase/wither.png' }
+    { title: 'Development', link: './assets/showcase/dev.png' },
+    { title: 'Drawers mod', link: './assets/showcase/drawers.png' },
+    { title: 'Hypixel', link: './assets/showcase/hypixel.png' },
+    { title: 'Meta API', link: './assets/showcase/meta.png' },
+    { title: 'Modmenu', link: './assets/showcase/modmenu.png' },
+    { title: 'Wither', link: './assets/showcase/wither.png' }
 ];
 
 @customElement('lf-showcase-gallery')
