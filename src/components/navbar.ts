@@ -1,6 +1,6 @@
 import { css, html, LitElement } from 'lit';
 import { customElement } from 'lit/decorators.js';
-import LegacyFabricIcon from '/assets/logos/legacyfabric.png'
+import LegacyFabricIcon from '/assets/logos/legacyfabric.png';
 
 @customElement('lf-navbar')
 export class NavBar extends LitElement {

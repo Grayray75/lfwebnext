@@ -3,11 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "license": "BSD-3-Clause",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build --emptyOutDir",
     "preview": "vite preview",
-    "format": "prettier src/**/*.ts src/**/*.css -w"
+    "format": "prettier src/**/*.{css,html,ts} --write",
+    "lint": "prettier src/**/*.{css,html,ts} --check"
   },
   "dependencies": {
     "@lit/task": "^1.0.2",
