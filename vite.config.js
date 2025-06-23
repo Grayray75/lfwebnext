@@ -4,6 +4,7 @@ import { globSync } from 'glob';
 /** @type {import('vite').UserConfig} */
 export default {
     root: resolve(__dirname, 'src'),
+    base: '/lfwebnext/',
     build: {
         outDir: resolve(__dirname, 'dist'),
         rollupOptions: {
