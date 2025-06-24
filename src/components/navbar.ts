@@ -11,15 +11,21 @@ export class NavBar extends LitElement {
                     <img src=${LegacyFabricIcon} alt="" width="32" height="32" />
                     Legacy-Fabric
                 </a>
-                <a href="/downloads.html">Downloads</a>
-                <a href="/usage.html">Usage</a>
-                <a href="/mods.html">Mods</a>
+                <a href="downloads.html">Downloads</a>
+                <a href="usage.html">Usage</a>
+                <a href="mods.html">Mods</a>
                 <a href="https://github.com/Legacy-Fabric/">Source</a>
-                <a href="/discord">Discord</a>
+                <a href="discord">Discord</a>
                 <a href="https://status.legacyfabric.net">Status</a>
             </nav>
         `;
     }
+
+    // TODO: I think this disabled the shadow dom?
+    // * https://lit.dev/docs/components/shadow-dom/#implementing-createrenderroot
+    //protected createRenderRoot(): HTMLElement | DocumentFragment {
+    //    return this;
+    //}
 
     static styles = css`
         nav {

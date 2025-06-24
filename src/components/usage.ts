@@ -27,10 +27,17 @@ export class Usage extends LitElement {
                 Minecraft Version:
                 <select name="versions" id="game-versions" @change=${this.updateVersions}>
                     ${this.initGameVersionsTask.render({
-                        initial: () => html`<option>Waiting to start task</option>`,
-                        pending: () => html`<option>Running task...</option>`,
-                        complete: (versionList) => versionList.map((version) => html`<option>${version}</option>`),
-                        error: (error) => html`<option>Oops, something went wrong: ${error}</option>`
+                        pending: () => html`<option>loading</option>`,
+                        complete: (versionList) => {
+                            return versionList.map((version) => {
+                                let selected = version === '1.8.9';
+                                return html`<option value=${version} ?selected=${selected}>${version}</option>`;
+                            });
+                        },
+                        error: (error) => {
+                            console.error(error);
+                            return html`<option>error</option>`;
+                        }
                     })}
                 </select>
             </p>
@@ -77,7 +84,8 @@ fabric_version=${this.apiVersion}+${this.minecraftVersion}
         //console.log(.querySelectorAll("code"));
         this.shadowRoot?.querySelectorAll('code').forEach((block) => {
             console.log(block);
-            hljs.highlightElement(block);
+            // TODO: Fix this
+            //hljs.highlightElement(block);
         });
     }
 
