@@ -98,9 +98,7 @@ fabric_version=${this.apiVersion}+${this.minecraftVersion}
     });
 
     private async updateVersions(e: Event) {
-        let versionSelector = e.target as HTMLSelectElement;
-        let selectedOption = versionSelector.selectedOptions[0] as HTMLOptionElement;
-        this.minecraftVersion = selectedOption.innerText;
+        this.minecraftVersion = (e.target as HTMLSelectElement).value;
 
         try {
             let loaderVersionsData = await getLoaderVersions(this.minecraftVersion);

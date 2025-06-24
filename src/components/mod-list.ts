@@ -66,9 +66,7 @@ export class ModListElement extends LitElement {
     }
 
     private async updateVersions(e: Event) {
-        let versionSelector = e.target as HTMLSelectElement;
-        let selectedOption = versionSelector.selectedOptions[0] as HTMLOptionElement;
-        this.minecraftVersion = selectedOption.value;
+        this.minecraftVersion = (e.target as HTMLSelectElement).value;
 
         this.mods = getModsInVersion(this.minecraftVersion);
     }
@@ -86,6 +84,11 @@ export class ModListElement extends LitElement {
             border: 2px solid #292929;
             border-radius: 4px;
             color: #e0e0e0;
+        }
+
+        #mods-table {
+            margin-left: auto;
+            margin-right: auto;
         }
 
         #mods-table td:nth-child(1) {
