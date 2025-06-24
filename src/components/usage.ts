@@ -1,11 +1,9 @@
-import { css, html, LitElement, type PropertyValues } from 'lit';
+import { css, html, LitElement, unsafeCSS } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { Task } from '@lit/task';
 import { getApiVersions, getGameVersions, getLoaderVersions } from '../utils/legacyfabric-meta';
 
-import hljs from 'highlight.js/lib/core';
-import hljs_gradle from 'highlight.js/lib/languages/gradle';
-hljs.registerLanguage('gradle', hljs_gradle);
+import highlightjs_style_dark from 'highlight.js/styles/github-dark-dimmed.css?inline';
 
 @customElement('lf-usage')
 export class Usage extends LitElement {
@@ -44,27 +42,27 @@ export class Usage extends LitElement {
 
             <h3>build.gradle</h3>
             <div name="code">
-                <pre><code class="gradle" id="build-gradle-code">
-dependencies {
-    minecraft "com.mojang:minecraft:${this.minecraftVersion}"
-    mappings "net.legacyfabric:yarn:${this.yarnVersion}:v2"
-    modImplementation "net.fabricmc:fabric-loader:${this.loaderVersion}"
+                <pre><code id="build-gradle-code" class="gradle hljs language-gradle">
+<span class="hljs-keyword">dependencies</span> {
+    <span class="hljs-string">minecraft "com.mojang:minecraft:${this.minecraftVersion}"</span>
+    <span class="hljs-string">mappings "net.legacyfabric:yarn:${this.yarnVersion}:v2"</span>
+    <span class="hljs-string">modImplementation "net.fabricmc:fabric-loader:${this.loaderVersion}"</span>
 
-    // Legacy-Fabric API
-    modImplementation "net.legacyfabric.legacy-fabric-api:legacy-fabric-api:${this.apiVersion}+${this.minecraftVersion}"
+    <span class="hljs-comment">// Legacy-Fabric API</span>
+    modImplementation <span class="hljs-string">"net.legacyfabric.legacy-fabric-api:legacy-fabric-api:${this.apiVersion}+${this.minecraftVersion}"</span>
 }
                 </code></pre>
             </div>
 
             <h3>gradle.properties</h3>
             <div name="code">
-                <pre><code class="properties" id="gradle-properties-code">
-minecraft_version=${this.minecraftVersion}
-yarn_mappings=${this.yarnVersion}
-loader_version=${this.loaderVersion}
+                <pre><code id="gradle-properties-code" class="properties hljs language-gradle">
+<span class="hljs-attr">minecraft_version</span>=<span class="hljs-string">${this.minecraftVersion}</span>
+<span class="hljs-attr">yarn_mappings</span>=<span class="hljs-string">${this.yarnVersion}</span>
+<span class="hljs-attr">loader_version</span>=<span class="hljs-string">${this.loaderVersion}</span>
 
-# Legacy-Fabric API
-fabric_version=${this.apiVersion}+${this.minecraftVersion}
+<span class="hljs-comment"># Legacy-Fabric API</span>
+<span class="hljs-attr">fabric_version</span>=<span class="hljs-string">${this.apiVersion}+${this.minecraftVersion}</span>
                 </code></pre>
             </div>
 
@@ -74,19 +72,12 @@ fabric_version=${this.apiVersion}+${this.minecraftVersion}
             <h2>Mappings Migration</h2>
             <p>Mappings can be auto updated by using the following command. See the <a href="https://fabricmc.net/wiki/tutorial:migratemappings">wiki page</a> for more help.</p>
 
-            <div name="code">
-                <pre><code class="bash">gradlew migrateMappings --mappings "${this.yarnVersion}"</code></pre>
+            <div name="code" class="gradle hljs language-gradle">
+                <pre><code class="bash">
+gradlew migrateMappings --mappings <span class="hljs-string">"${this.yarnVersion}"</span>
+                </code></pre>
             </div>
         `;
-    }
-
-    firstUpdated(_changedProperties: PropertyValues) {
-        //console.log(.querySelectorAll("code"));
-        this.shadowRoot?.querySelectorAll('code').forEach((block) => {
-            console.log(block);
-            // TODO: Fix this
-            //hljs.highlightElement(block);
-        });
     }
 
     private initGameVersionsTask = new Task(this, {
@@ -119,7 +110,8 @@ fabric_version=${this.apiVersion}+${this.minecraftVersion}
     }
 
     static styles = css`
-        div {
+        ${unsafeCSS(highlightjs_style_dark)}
+        div[name='code'] {
             text-align: left;
         }
     `;
