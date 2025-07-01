@@ -52,7 +52,8 @@ export class ModListElement extends LitElement {
     private renderMod(mod: ModEntry) {
         let links: any = [];
         for (const [site, link] of Object.entries(mod['links'])) {
-            links.push(html`<a href=${link as string}><img src="./assets/logos/${site}.svg" class="mod-link" alt=${site} /></a>`);
+            let url = new URL('./assets/logos/${site}.svg', import.meta.env.BASE_URL).href;
+            links.push(html`<a href=${link as string}><img src=${url} class="mod-link" alt=${site} /></a>`);
         }
         let working = mod.working ? '✔️' : '❌️';
 
