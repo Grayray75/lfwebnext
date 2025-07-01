@@ -3,7 +3,7 @@ import { customElement } from 'lit/decorators.js';
 import LegacyFabricIcon from '/assets/logos/legacyfabric.png';
 
 @customElement('lf-navbar')
-export class NavBar extends LitElement {
+export class NavBarElement extends LitElement {
     render() {
         return html`
             <nav>
@@ -21,13 +21,12 @@ export class NavBar extends LitElement {
         `;
     }
 
-    // TODO: I think this disabled the shadow dom?
-    // * https://lit.dev/docs/components/shadow-dom/#implementing-createrenderroot
-    //protected createRenderRoot(): HTMLElement | DocumentFragment {
-    //    return this;
-    //}
-
     static styles = css`
+        :host {
+            display: block;
+            padding-top: 90px;
+        }
+
         nav {
             width: 100%;
             position: fixed;

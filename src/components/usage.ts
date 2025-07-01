@@ -72,8 +72,8 @@ export class Usage extends LitElement {
             <h2>Mappings Migration</h2>
             <p>Mappings can be auto updated by using the following command. See the <a href="https://fabricmc.net/wiki/tutorial:migratemappings">wiki page</a> for more help.</p>
 
-            <div name="code" class="gradle hljs language-gradle">
-                <pre><code class="bash">
+            <div name="code">
+                <pre><code class="bash hljs">
 gradlew migrateMappings --mappings <span class="hljs-string">"${this.yarnVersion}"</span>
                 </code></pre>
             </div>
@@ -111,6 +111,11 @@ gradlew migrateMappings --mappings <span class="hljs-string">"${this.yarnVersion
 
     static styles = css`
         ${unsafeCSS(highlightjs_style_dark)}
+
+        :host {
+            width: clamp(670px, 100%, 1000px);
+        }
+
         div[name='code'] {
             text-align: left;
         }

@@ -15,4 +15,9 @@ export class LfMeta extends LitElement {
             <meta property="og:description" content="The home of legacy version support for Fabric." />
         `;
     }
+
+    // Disable shadow DOM for this
+    createRenderRoot() {
+        return this;
+    }
 }
