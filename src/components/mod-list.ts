@@ -5,6 +5,10 @@ import mods from '../assets/mods.json';
 import type { ModEntry } from '../utils/mods.types';
 import { map } from 'lit/directives/map.js';
 
+import CurseforgeIcon from '../assets/logos/curseforge.svg';
+import GithubIcon from '../assets/logos/github.svg';
+import ModrinthIcon from '../assets/logos/modrinth.svg';
+
 const mcVersions = new Set(
     mods
         .map((m) => m.versions)
@@ -14,6 +18,19 @@ const mcVersions = new Set(
 
 function getModsInVersion(version: string): ModEntry[] {
     return mods.filter((mod) => mod.versions.includes(version));
+}
+
+function getModWebsiteIcon(name: string) {
+    switch (name) {
+        case 'curseforge':
+            return CurseforgeIcon;
+        case 'github':
+            return GithubIcon;
+        case 'modrinth':
+            return ModrinthIcon;
+        default:
+            return '';
+    }
 }
 
 @customElement('lf-mod-list')
@@ -52,8 +69,7 @@ export class ModListElement extends LitElement {
     private renderMod(mod: ModEntry) {
         let links: any = [];
         for (const [site, link] of Object.entries(mod['links'])) {
-            let url = new URL('./assets/logos/${site}.svg', import.meta.env.BASE_URL).href;
-            links.push(html`<a href=${link as string}><img src=${url} class="mod-link" alt=${site} /></a>`);
+            links.push(html`<a href=${link as string}><img src=${getModWebsiteIcon(site)} class="mod-link" alt=${site} /></a>`);
         }
         let working = mod.working ? '✔️' : '❌️';
 
