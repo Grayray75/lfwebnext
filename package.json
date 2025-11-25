@@ -12,14 +12,14 @@
     "lint": "prettier src/**/*.{css,html,ts} --check"
   },
   "dependencies": {
-    "@lit/task": "^1.0.2",
+    "@lit/task": "^1.0.3",
     "highlight.js": "^11.11.1",
-    "lit": "^3.3.0"
+    "lit": "^3.3.1"
   },
   "devDependencies": {
     "prettier": "^3.6.2",
-    "tinyglobby": "^0.2.14",
-    "typescript": "~5.8.3",
-    "vite": "^6.3.5"
+    "tinyglobby": "^0.2.15",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4"
   }
 }
