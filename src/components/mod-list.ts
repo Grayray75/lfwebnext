@@ -1,9 +1,10 @@
 import { LitElement, css, html } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';
-import mods from '../assets/mods.json';
-import type { ModEntry } from '../utils/mods.types';
 import { map } from 'lit/directives/map.js';
+
+import type { ModEntry } from '../utils/mods.types';
+import mods from '../assets/mods.json';
 
 import CurseforgeIcon from '../assets/logos/curseforge.svg';
 import GithubIcon from '../assets/logos/github.svg';

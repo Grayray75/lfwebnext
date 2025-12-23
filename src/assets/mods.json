@@ -1,24 +1,59 @@
 [
   {
-    "name": "Achievement Fix",
+    "name": "AccessWidener Loader",
     "links": {
-      "github": "https://github.com/tildejustin/achievement-fix",
-      "modrinth": "https://modrinth.com/mod/achievement-fix"
+      "modrinth": "https://modrinth.com/mod/accesswidener-loader",
+      "github": null
     },
     "working": true,
-    "versions": ["1.13.2", "1.7.10", "1.5.2", "1.4.7"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "Achievement Fix",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/achievement-fix",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.13.2", "1.4.7", "1.5.2", "1.7.10"]
   },
   {
     "name": "Alternate Current",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/SpaceWalkerRS/alternate-current"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "Anchiale",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/minecraft-Java-Edition-Speedrunning/anchiale"
     },
     "working": true,
@@ -27,15 +62,17 @@
   {
     "name": "Atum",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/tildejustin/atum"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4"]
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.13.2", "1.6.4", "1.7.10", "1.8.9", "1.9.4"]
   },
   {
     "name": "AutoGG",
     "links": {
-      "modrinth": "https://modrinth.com/mod/autogg"
+      "modrinth": "https://modrinth.com/mod/autogg",
+      "github": null
     },
     "working": true,
     "versions": ["1.8.9"]
@@ -43,8 +80,8 @@
   {
     "name": "AutoTechno",
     "links": {
-      "github": "https://github.com/ZtereoHYPE/AutoTechno",
-      "modrinth": "https://modrinth.com/mod/autotechno"
+      "modrinth": "https://modrinth.com/mod/autotechno",
+      "github": "https://github.com/ZtereoHYPE/AutoTechno"
     },
     "working": true,
     "versions": ["1.8.9"]
@@ -52,8 +89,17 @@
   {
     "name": "AxolotlClient",
     "links": {
-      "github": "https://github.com/AxolotlClient",
-      "modrinth": "https://modrinth.com/mod/axolotlclient"
+      "modrinth": "https://modrinth.com/mod/axolotlclient",
+      "github": "https://github.com/AxolotlClient"
+    },
+    "working": true,
+    "versions": ["1.8.9"]
+  },
+  {
+    "name": "AxolotlClient - Customizable HUD \u0026 Client QoL Features",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/axolotlclient",
+      "github": null
     },
     "working": true,
     "versions": ["1.8.9"]
@@ -61,7 +107,8 @@
   {
     "name": "Babyzombie Drops",
     "links": {
-      "github": "https://github.com/baraclese/babyzombie-drops"
+      "modrinth": "https://modrinth.com/mod/babyzombie-drops",
+      "github": null
     },
     "working": true,
     "versions": ["1.6.4"]
@@ -69,16 +116,35 @@
   {
     "name": "Better Doors",
     "links": {
-      "github": "https://github.com/baraclese/better-doors"
+      "modrinth": "https://modrinth.com/mod/better-doors",
+      "github": null
     },
     "working": true,
     "versions": ["1.6.4"]
   },
   {
+    "name": "Block Helper",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/block-helper",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.3.2", "1.4.7", "1.5.2"]
+  },
+  {
+    "name": "Brigo",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/brigo",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.12.2"]
+  },
+  {
     "name": "ChromaHudFabric",
     "links": {
-      "github": "https://github.com/CoolMineman/ChromaHudFabric",
-      "modrinth": "https://modrinth.com/mod/PzuxEnMj"
+      "modrinth": "https://modrinth.com/mod/PzuxEnMj",
+      "github": "https://github.com/CoolMineman/ChromaHudFabric"
     },
     "working": false,
     "versions": ["1.8.9"]
@@ -86,67 +152,113 @@
   {
     "name": "COSTAR",
     "links": {
-      "github": "https://github.com/tildejustin/costar",
-      "modrinth": "https://modrinth.com/mod/costar"
+      "modrinth": "https://modrinth.com/mod/costar",
+      "github": null
     },
     "working": true,
-    "versions": ["1.11.2", "1.10.2", "1.9.4"]
+    "versions": ["1.10.2", "1.11.2", "1.9.4"]
   },
   {
     "name": "CTM SpeedrunIGT Integration",
     "links": {
-      "github": "https://github.com/tildejustin/ctm-srigt-integration",
-      "modrinth": "https://modrinth.com/mod/ctm-speedrunigt-integration"
+      "modrinth": "https://modrinth.com/mod/ctm-speedrunigt-integration",
+      "github": null
     },
     "working": true,
-    "versions": ["1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "Custom Map Resetter",
     "links": {
-      "github": "https://github.com/tildejustin/custom-map-resetter",
-      "modrinth": "https://modrinth.com/mod/custom-map-resetter"
+      "modrinth": "https://modrinth.com/mod/custom-map-resetter",
+      "github": null
     },
     "working": true,
-    "versions": ["1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "Custom Skin Loader",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/HowardZHY/CustomSkinLoader-LegacyFabric"
     },
     "working": true,
-    "versions": ["1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10"]
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.7.10", "1.8.9", "1.9.4"]
   },
   {
-    "name": "Don't Clear Chat History",
+    "name": "Don\u0027t Clear Chat History",
     "links": {
-      "modrinth": "https://modrinth.com/mod/sUbMm93i"
+      "modrinth": "https://modrinth.com/mod/sUbMm93i",
+      "github": null
     },
     "working": false,
-    "versions": ["1.12.2", "1.8.9", "1.7.10"]
+    "versions": ["1.12.2", "1.7.10", "1.8.9"]
   },
   {
     "name": "Durability Speed",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/PseudoDistant/durability-speed"
     },
     "working": false,
-    "versions": ["1.12.2", "1.8.9", "1.7.10"]
+    "versions": ["1.12.2", "1.7.10", "1.8.9"]
   },
   {
     "name": "Dynamic FPS",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/dynamic-fps"
     },
     "working": true,
-    "versions": ["1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "e4mc Retro",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/e4mc-retro",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.13.2", "1.6.4", "1.7.10", "1.8.9", "1.9.4"]
   },
   {
     "name": "Ears",
     "links": {
-      "github": "https://github.com/unascribed/Ears",
-      "modrinth": "https://modrinth.com/mod/mfzaZK3Z"
+      "modrinth": "https://modrinth.com/mod/mfzaZK3Z",
+      "github": "https://github.com/unascribed/Ears"
     },
     "working": false,
     "versions": ["1.8.9"]
@@ -154,24 +266,17 @@
   {
     "name": "EndFightMod",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/Slackow/EndFightMod---Fabric"
     },
     "working": true,
-    "versions": ["1.8.9", "1.7.10"]
-  },
-  {
-    "name": "EndFightMod",
-    "links": {
-      "github": "https://github.com/tildejustin/endfight-mod"
-    },
-    "working": true,
-    "versions": ["1.3.2"]
+    "versions": ["1.7.10", "1.8.9"]
   },
   {
     "name": "Extended Hotbar",
     "links": {
-      "github": "https://github.com/BoogieMonster1O1/ExtendedHotbar",
-      "modrinth": "https://modrinth.com/mod/twG4qbSN"
+      "modrinth": "https://modrinth.com/mod/twG4qbSN",
+      "github": "https://github.com/BoogieMonster1O1/ExtendedHotbar"
     },
     "working": true,
     "versions": ["1.8.9"]
@@ -179,8 +284,8 @@
   {
     "name": "Extended Ingame Hud",
     "links": {
-      "github": "https://github.com/KingContaria/Extended-Ingame-Hud-1.8",
-      "modrinth": "https://modrinth.com/mod/extended-ingame-hud"
+      "modrinth": "https://modrinth.com/mod/extended-ingame-hud",
+      "github": null
     },
     "working": true,
     "versions": ["1.8.9"]
@@ -188,16 +293,29 @@
   {
     "name": "Extra Options",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/tildejustin/extra-options"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "F3ServerInfo",
     "links": {
-      "github": "https://github.com/creeper123123321/F3ServerInfo",
-      "curseforge": "https://www.curseforge.com/minecraft/mc-mods/f3serverinfo"
+      "modrinth": null,
+      "github": "https://github.com/creeper123123321/F3ServerInfo"
     },
     "working": true,
     "versions": ["1.8.9"]
@@ -205,25 +323,44 @@
   {
     "name": "Fabricated Forge",
     "links": {
-      "github": "https://github.com/arthurbambou/Fabricated-Legacy-Forge",
-      "modrinth": "https://modrinth.com/mod/fabricated-forge"
+      "modrinth": "https://modrinth.com/mod/fabricated-forge",
+      "github": "https://github.com/arthurbambou/Fabricated-Legacy-Forge"
     },
     "working": true,
-    "versions": ["1.4.7", "1.4.6", "1.4.5", "1.4.4", "1.4.3", "1.4.2", "1.4.1", "1.4.0", "1.3.2"]
+    "versions": ["1.3.2", "1.4.0", "1.4.1", "1.4.2", "1.4.3", "1.4.4", "1.4.5", "1.4.6", "1.4.7"]
+  },
+  {
+    "name": "Fabricated Legacy Forge",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/fabricated-forge",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.3.2", "1.4.7"]
+  },
+  {
+    "name": "Fabricated Rift",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/fabricated-rift",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.13.2"]
   },
   {
     "name": "Fatal Blow",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/PseudoDistant/fatal-blow"
     },
     "working": false,
-    "versions": ["1.12.2", "1.8.9", "1.7.10"]
+    "versions": ["1.12.2", "1.7.10", "1.8.9"]
   },
   {
     "name": "Fleecifer",
     "links": {
-      "github": "https://github.com/mclegoman/fleecifer",
-      "modrinth": "https://modrinth.com/mod/fleecifer"
+      "modrinth": "https://modrinth.com/mod/fleecifer",
+      "github": "https://github.com/mclegoman/fleecifer"
     },
     "working": true,
     "versions": ["1.12.2"]
@@ -231,32 +368,68 @@
   {
     "name": "Font Fixer",
     "links": {
-      "modrinth": "https://modrinth.com/mod/font-fixer"
+      "modrinth": "https://modrinth.com/mod/font-fixer",
+      "github": null
     },
     "working": true,
-    "versions": ["1.3.2"]
+    "versions": ["1.3.2", "1.4.7", "1.5.2"]
+  },
+  {
+    "name": "Force Port",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/forceport",
+      "github": null
+    },
+    "working": true,
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "Force Port Mod",
+    "links": {
+      "modrinth": null,
+      "github": "https://github.com/marinersfan824/Force-Port-Mod"
+    },
+    "working": true,
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "FOV Effects Scale",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/KingContaria/Fov-Effects-Scale-Mod"
     },
     "working": true,
     "versions": ["1.8.9"]
   },
   {
-    "name": "Force Port Mod",
-    "links": {
-      "github": "https://github.com/marinersfan824/Force-Port-Mod"
-    },
-    "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
-  },
-  {
     "name": "FPS - Display",
     "links": {
-      "github": "https://github.com/Grayray75/FPS-Display",
-      "modrinth": "https://modrinth.com/mod/fpsdisplay"
+      "modrinth": "https://modrinth.com/mod/fpsdisplay",
+      "github": "https://github.com/Grayray75/FPS-Display"
     },
     "working": true,
     "versions": ["1.8.9"]
@@ -264,15 +437,49 @@
   {
     "name": "FPS Plus",
     "links": {
-      "github": "https://github.com/HowardZHY/FPS-Plus",
-      "modrinth": "https://modrinth.com/mod/fpspluslf"
+      "modrinth": "https://modrinth.com/mod/fpspluslf",
+      "github": "https://github.com/HowardZHY/FPS-Plus"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "FPS Plus Legacy Fabric",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/fpspluslf",
+      "github": null
+    },
+    "working": true,
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "Freemetics",
     "links": {
+      "modrinth": null,
       "github": "https://codeberg.org/fineless71/Freemetics"
     },
     "working": true,
@@ -281,35 +488,65 @@
   {
     "name": "Gamma 5",
     "links": {
-      "github": "https://github.com/tildejustin/gamma",
-      "modrinth": "https://modrinth.com/mod/gamma-five"
+      "modrinth": "https://modrinth.com/mod/gamma-five",
+      "github": null
     },
     "working": true,
-    "versions": ["1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9"]
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.8.9", "1.9.4"]
   },
   {
     "name": "Half-Heart Hardcore",
     "links": {
-      "github": "https://github.com/tildejustin/half-heart-hardcore",
-      "modrinth": "https://modrinth.com/mod/half-heart-hardcore"
+      "modrinth": "https://modrinth.com/mod/half-heart-hardcore",
+      "github": null
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "Horse Debug Info",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/horse-debug-info",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.13.2", "1.8.9", "1.9.4"]
+  },
+  {
+    "name": "I Wish it Could be Halloween Every Day",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/iwicbhed",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.10.2"]
   },
   {
     "name": "Infinte Water Bucket",
     "links": {
-      "github": "https://github.com/coolsimulations/Infinity-Water-Bucket",
-      "modrinth": "https://modrinth.com/mod/nNMXZUPi"
+      "modrinth": "https://modrinth.com/mod/nNMXZUPi",
+      "github": "https://github.com/coolsimulations/Infinity-Water-Bucket"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.8.9", "1.7.10", "1.6.4"]
+    "versions": ["1.12.2", "1.13.2", "1.6.4", "1.7.10", "1.8.9"]
   },
   {
     "name": "Inventory Pause (Cursed)",
     "links": {
-      "github": "https://github.com/macbrayne/inventory-pause-cursed",
-      "modrinth": "https://modrinth.com/mod/pBbOtJk2"
+      "modrinth": "https://modrinth.com/mod/pBbOtJk2",
+      "github": "https://github.com/macbrayne/inventory-pause-cursed"
     },
     "working": false,
     "versions": ["1.12.2"]
@@ -317,85 +554,228 @@
   {
     "name": "Itemless",
     "links": {
-      "github": "https://github.com/tildejustin/itemless",
-      "modrinth": "https://modrinth.com/mod/itemless"
+      "modrinth": "https://modrinth.com/mod/itemless",
+      "github": null
     },
     "working": true,
-    "versions": ["1.5.2", "1.4.7", "1.3.2"]
+    "versions": ["1.3.2", "1.4.7", "1.5.2", "1.6.4", "1.7.10"]
+  },
+  {
+    "name": "Ksyxis",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/ksyxis",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.13.2", "1.8.9", "1.9.4"]
+  },
+  {
+    "name": "LAN Properties",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/lan-properties",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.12.2"]
   },
   {
     "name": "LazyDFU",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/KingContaria/lazydfu"
     },
     "working": true,
     "versions": ["1.13.2"]
   },
   {
-    "name": "Legacy Crash Fix",
+    "name": "Legacy (Fabric) Fixes",
     "links": {
-      "github": "https://github.com/tildejustin/legacy-crash-fix"
+      "modrinth": "https://modrinth.com/mod/legacy-fabric-fixes",
+      "github": null
     },
     "working": true,
-    "versions": ["1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": ["1.3.2", "1.4.7", "1.5.2", "1.6.4", "1.7.10", "1.8.9"]
   },
   {
-    "name": "Legacy Chunk Borders",
+    "name": "Legacy Advancements Debug",
     "links": {
-      "github": "https://github.com/tildejustin/legacy-chunk-borders",
-      "modrinth": "https://modrinth.com/mod/legacy-chunk-borders"
+      "modrinth": "https://modrinth.com/mod/legacy-advancements-debug",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.12.2", "1.13.2"]
+  },
+  {
+    "name": "legacy chunk borders",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/legacy-chunk-borders",
+      "github": null
     },
     "working": true,
     "versions": ["1.8.9"]
   },
   {
-    "name": "Legacy Debug Pause",
+    "name": "Legacy Chunk Borders",
     "links": {
-      "github": "https://github.com/tildejustin/legacy-debug-pause",
-      "modrinth": "https://modrinth.com/mod/legacy-debug-pause"
+      "modrinth": "https://modrinth.com/mod/legacy-chunk-borders",
+      "github": "https://github.com/tildejustin/legacy-chunk-borders"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": ["1.8.9"]
+  },
+  {
+    "name": "Legacy Crash Fix",
+    "links": {
+      "modrinth": null,
+      "github": "https://github.com/tildejustin/legacy-crash-fix"
+    },
+    "working": true,
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "Legacy Debug Pause",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/legacy-debug-pause",
+      "github": null
+    },
+    "working": true,
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "Legacy Elytras",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/pixfumy/Legacy-Elytras"
     },
     "working": true,
-    "versions": ["1.8.9", "1.7.10"]
+    "versions": ["1.7.10", "1.8.9"]
+  },
+  {
+    "name": "Legacy Fabric API",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/legacy-fabric-api",
+      "github": null
+    },
+    "working": true,
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "Legacy Fabric API fixes for BTW",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/legacy-fabric-api-fixes-btw",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.6.4"]
   },
   {
     "name": "Legacy Input Patch",
     "links": {
-      "github": "https://github.com/HowardZHY/LegacyInputPatch",
-      "modrinth": "https://modrinth.com/mod/legacyinputpatch"
+      "modrinth": "https://modrinth.com/mod/legacyinputpatch",
+      "github": null
     },
     "working": true,
-    "versions": ["1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": ["1.3.2", "1.4.7", "1.5.2", "1.6.4", "1.7.10", "1.8.9"]
+  },
+  {
+    "name": "Legacy LazyDFU",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/legacy-lazydfu",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.13.2"]
   },
   {
     "name": "Legacy motioNO",
     "links": {
-      "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/motiono",
-      "modrinth": "https://modrinth.com/mod/legacy-motioNO"
+      "modrinth": "https://modrinth.com/mod/legacy-motiono",
+      "github": null
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
-    "name": "LegacyPlanarFog",
+    "name": "Legacy OptiFabric",
     "links": {
-      "github": "https://github.com/RedLime/LegacyPlanarFog"
+      "modrinth": "https://modrinth.com/mod/legacy-optifabric",
+      "github": null
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "Legacy Skin Fix",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/legacy-skin-fix",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.3.2", "1.4.7", "1.5.2", "1.6.4"]
   },
   {
     "name": "Legacy VanillaFix",
     "links": {
-      "github": "https://github.com/YetAnotherMcModder/Legacy-VanillaFix",
-      "modrinth": "https://modrinth.com/mod/kzsy7on5"
+      "modrinth": "https://modrinth.com/mod/kzsy7on5",
+      "github": "https://github.com/YetAnotherMcModder/Legacy-VanillaFix"
     },
     "working": true,
     "versions": ["1.8.9"]
@@ -403,26 +783,47 @@
   {
     "name": "Legacy Visible Barrier",
     "links": {
-      "github": "https://github.com/metaconscious/legacy-visible-barrier",
-      "modrinth": "https://modrinth.com/mod/legacy-visible-barrier"
+      "modrinth": "https://modrinth.com/mod/legacy-visible-barrier",
+      "github": "https://github.com/metaconscious/legacy-visible-barrier"
     },
     "working": true,
     "versions": ["1.8.9"]
   },
   {
-    "name": "LetMeSpeak",
+    "name": "LegacyPlanarFog",
     "links": {
-      "github": "https://github.com/spacebytee/LetMeSpeak",
-      "modrinth": "https://modrinth.com/mod/letmespeak"
+      "modrinth": null,
+      "github": "https://github.com/RedLime/LegacyPlanarFog"
     },
     "working": true,
-    "versions": ["1.7.10", "1.8.9", "1.12.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "LetMeSpeak",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/letmespeak",
+      "github": "https://github.com/spacebytee/LetMeSpeak"
+    },
+    "working": true,
+    "versions": ["1.12.2", "1.7.10", "1.8.9"]
   },
   {
     "name": "Librarian",
     "links": {
-      "github": "https://github.com/VideoGameSmash12/Librarian",
-      "modrinth": "https://modrinth.com/mod/librarian"
+      "modrinth": "https://modrinth.com/mod/librarian",
+      "github": null
     },
     "working": true,
     "versions": ["1.12.2", "1.13.2"]
@@ -430,16 +831,44 @@
   {
     "name": "Loafy",
     "links": {
-      "github": "https://github.com/mclegoman/loafy",
-      "modrinth": "https://modrinth.com/mod/loafy"
+      "modrinth": "https://modrinth.com/mod/loafy",
+      "github": "https://github.com/mclegoman/loafy"
     },
     "working": true,
-    "versions": ["1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.4.6", "1.4.5", "1.4.4", "1.4.3", "1.4.2", "1.4.1", "1.4.0", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.3.2",
+      "1.4.0",
+      "1.4.1",
+      "1.4.2",
+      "1.4.3",
+      "1.4.4",
+      "1.4.5",
+      "1.4.6",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "MenuFPSUnlocker",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/menufpsunlocker",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.7.10", "1.8.9", "1.9.4"]
   },
   {
     "name": "Missing Vanilla Recipes",
     "links": {
-      "github": "https://github.com/baraclese/missing-vanilla-recipes"
+      "modrinth": "https://modrinth.com/mod/missing-vanilla-recipes",
+      "github": null
     },
     "working": true,
     "versions": ["1.6.4"]
@@ -447,86 +876,134 @@
   {
     "name": "Mod Loading Screen",
     "links": {
-      "github": "https://github.com/Gaming32/mod-loading-screen",
-      "modrinth": "https://modrinth.com/mod/mod-loading-screen"
+      "modrinth": "https://modrinth.com/mod/mod-loading-screen",
+      "github": "https://github.com/Gaming32/mod-loading-screen"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "Mod Menu",
     "links": {
-      "github": "https://github.com/BoogieMonster1O1/ModMenu",
-      "modrinth": "https://modrinth.com/mod/XzTYkVLx"
+      "modrinth": "https://modrinth.com/mod/XzTYkVLx",
+      "github": "https://github.com/BoogieMonster1O1/ModMenu"
     },
     "working": true,
     "versions": ["1.8.9"]
   },
   {
-    "name": "Mop Menu",
+    "name": "Mod Remapping API",
     "links": {
-      "github": "https://codeberg.org/fineless71/MopMenu"
+      "modrinth": "https://modrinth.com/mod/mod-remapping-api",
+      "github": null
     },
     "working": true,
-    "versions": ["1.7.10", "1.8.9", "1.9.4", "1.10.2", "1.11.2"]
-  },
-  {
-    "name": "MouseDelayFix-fabric",
-    "links": {
-      "github": "https://github.com/tildejustin/MouseDelayFix-fabric"
-    },
-    "working": true,
-    "versions": ["1.10.2", "1.9.4", "1.8.9"]
-  },
-  {
-    "name": "NextSpring",
-    "links": {
-      "github": "https://github.com/Nova-Committee/NextSpring/tree/Fabric-Legacy/1.8.9",
-      "curseforge": "https://www.curseforge.com/minecraft/mc-mods/nextspring-fabric"
-    },
-    "working": true,
-    "versions": ["1.12.2", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
-  },
-  {
-    "name": "NNBSP Fix",
-    "links": {
-      "github": "https://github.com/tildejustin/nnbsp-fix",
-      "modrinth": "https://modrinth.com/mod/nnbsp-fix"
-    },
-    "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "Modern KeyBinding",
     "links": {
-      "github": "https://github.com/Nova-Committee/ModernKeyBinding",
-      "modrinth": "https://modrinth.com/mod/modernkeybinding"
+      "modrinth": "https://modrinth.com/mod/modernkeybinding",
+      "github": "https://github.com/Nova-Committee/ModernKeyBinding"
     },
     "working": true,
     "versions": ["1.7.10", "1.8.9"]
   },
   {
-    "name": "No More Bleeding Sheep",
+    "name": "Mop Menu",
     "links": {
-      "github": "https://github.com/OakBricks/no-more-bleeding-sheep",
-      "modrinth": "https://modrinth.com/mod/HXXsQvqV"
+      "modrinth": null,
+      "github": "https://codeberg.org/fineless71/MopMenu"
     },
-    "working": false,
-    "versions": ["1.13.2", "1.12.2"]
+    "working": true,
+    "versions": ["1.10.2", "1.11.2", "1.7.10", "1.8.9", "1.9.4"]
+  },
+  {
+    "name": "MouseDelayFix-fabric",
+    "links": {
+      "modrinth": null,
+      "github": "https://github.com/tildejustin/MouseDelayFix-fabric"
+    },
+    "working": true,
+    "versions": ["1.10.2", "1.8.9", "1.9.4"]
+  },
+  {
+    "name": "NextSpring",
+    "links": {
+      "modrinth": null,
+      "github": "https://github.com/Nova-Committee/NextSpring/tree/Fabric-Legacy/1.8.9"
+    },
+    "working": true,
+    "versions": ["1.12.2", "1.3.2", "1.4.7", "1.5.2", "1.6.4", "1.7.10", "1.8.9"]
+  },
+  {
+    "name": "NNBSP Fix",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/nnbsp-fix",
+      "github": null
+    },
+    "working": true,
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "No Enchant Cap",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/PseudoDistant/no-enchantment-cap"
     },
     "working": false,
-    "versions": ["1.12.2", "1.8.9", "1.7.10"]
+    "versions": ["1.12.2", "1.7.10", "1.8.9"]
+  },
+  {
+    "name": "No More Bleeding Sheep",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/HXXsQvqV",
+      "github": "https://github.com/OakBricks/no-more-bleeding-sheep"
+    },
+    "working": false,
+    "versions": ["1.12.2", "1.13.2"]
   },
   {
     "name": "No Paus",
     "links": {
-      "github": "https://github.com/tildejustin/no-paus",
-      "modrinth": "https://modrinth.com/mod/no-paus"
+      "modrinth": "https://modrinth.com/mod/no-paus",
+      "github": null
     },
     "working": true,
     "versions": ["1.3.2"]
@@ -534,14 +1011,25 @@
   {
     "name": "No Recipe Book",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/Grayray75/NoRecipeBook"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2"]
+    "versions": ["1.12.2", "1.13.2"]
+  },
+  {
+    "name": "NoRecipeBook",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/norecipebook",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.12.2", "1.13.2"]
   },
   {
     "name": "Old Block Hit",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/TAKfsg/oldblockhit-legacy-fabric"
     },
     "working": true,
@@ -550,16 +1038,26 @@
   {
     "name": "Oldium",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/OldiumMC/oldium"
     },
     "working": true,
     "versions": ["1.8.9"]
   },
   {
+    "name": "Omnilook",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/omnilook",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.13.2", "1.6.4", "1.7.10", "1.8.9", "1.9.4"]
+  },
+  {
     "name": "One Block At A Time",
     "links": {
-      "github": "https://github.com/BleachDev/oneblock",
-      "modrinth": "https://modrinth.com/mod/oneblock"
+      "modrinth": "https://modrinth.com/mod/oneblock",
+      "github": "https://github.com/BleachDev/oneblock"
     },
     "working": true,
     "versions": ["1.12.2", "1.8.9"]
@@ -567,17 +1065,47 @@
   {
     "name": "Optifabric",
     "links": {
-      "github": "https://github.com/tildejustin/optifabric",
-      "modrinth": "https://modrinth.com/mod/legacy-optifabric"
+      "modrinth": "https://modrinth.com/mod/legacy-optifabric",
+      "github": "https://github.com/tildejustin/optifabric"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "OptiFine Unbound Zoom Fix",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/zoom-fix",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.7.10"]
+  },
+  {
+    "name": "Phosphor-Legacy",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/phosphor-legacy",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.12.2", "1.8.9"]
   },
   {
     "name": "Punch 2 Prime",
     "links": {
-      "github": "https://github.com/NeRdTheNed/Punch2Prime",
-      "modrinth": "https://modrinth.com/mod/CT5U6tG4"
+      "modrinth": "https://modrinth.com/mod/CT5U6tG4",
+      "github": "https://github.com/NeRdTheNed/Punch2Prime"
     },
     "working": false,
     "versions": ["1.8.9"]
@@ -585,17 +1113,26 @@
   {
     "name": "QuickPlant",
     "links": {
-      "github": "https://github.com/Nova-Committee/QuickPlant/tree/Fabric-Legacy/1.8.9",
-      "curseforge": "https://www.curseforge.com/minecraft/mc-mods/quickplant-fabric"
+      "modrinth": null,
+      "github": "https://github.com/Nova-Committee/QuickPlant/tree/Fabric-Legacy/1.8.9"
     },
     "working": true,
-    "versions": ["1.8.9", "1.7.10"]
+    "versions": ["1.7.10", "1.8.9"]
+  },
+  {
+    "name": "Raw Mouse Input",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/rawmouseinput",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.7.10", "1.8.9", "1.9.4"]
   },
   {
     "name": "Redstone Multimeter Fabric",
     "links": {
-      "github": "https://github.com/SpaceWalkerRS/redstone-multimeter-fabric",
-      "modrinth": "https://modrinth.com/mod/X6YTb3G1"
+      "modrinth": "https://modrinth.com/mod/X6YTb3G1",
+      "github": "https://github.com/SpaceWalkerRS/redstone-multimeter-fabric"
     },
     "working": false,
     "versions": ["1.13.2"]
@@ -603,90 +1140,185 @@
   {
     "name": "Set Spawn",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/set-spawn"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "Show My Hunger",
     "links": {
-      "github": "https://github.com/KingContaria/Show-My-Hunger",
-      "modrinth": "https://modrinth.com/mod/show-my-hunger"
+      "modrinth": "https://modrinth.com/mod/show-my-hunger",
+      "github": null
     },
     "working": true,
-    "versions": ["1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4"]
+    "versions": ["1.10.2", "1.6.4", "1.7.10", "1.8.9", "1.9.4"]
+  },
+  {
+    "name": "Simple Zoom",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/alexis-simple-zoom",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.8.9"]
   },
   {
     "name": "SleepBackground",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/RedLime/SleepBackground"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10"]
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.13.2", "1.7.10", "1.8.9", "1.9.4"]
   },
   {
     "name": "SpeedRunIGT",
     "links": {
-      "github": "https://github.com/RedLime/SpeedRunIGT",
-      "modrinth": "https://modrinth.com/mod/SpeedRunIGT"
+      "modrinth": "https://modrinth.com/mod/SpeedRunIGT",
+      "github": "https://github.com/RedLime/SpeedRunIGT"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "StandardSettings",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/KingContaria/StandardSettings"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "State Output",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/tildejustin/state-output"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
   },
   {
     "name": "StatsPerWorld",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/RedLime/StatsPerWorld"
     },
     "working": true,
-    "versions": ["1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": ["1.3.2", "1.4.7", "1.5.2", "1.6.4"]
+  },
+  {
+    "name": "StorageBox for Fabric",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/storagebox-fabric",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.12.2", "1.8.9"]
   },
   {
     "name": "Subtitles backport",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/YetAnotherMcModder/Subtitles-Backport"
     },
     "working": true,
-    "versions": ["1.8.9", "1.7.10"]
+    "versions": ["1.7.10", "1.8.9"]
   },
   {
     "name": "TabFocus",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/RedLime/TabFocus"
     },
     "working": true,
-    "versions": ["1.13.2", "1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9", "1.7.10", "1.6.4", "1.5.2", "1.4.7", "1.3.2"]
+    "versions": [
+      "1.10.2",
+      "1.11.2",
+      "1.12.2",
+      "1.13.2",
+      "1.3.2",
+      "1.4.7",
+      "1.5.2",
+      "1.6.4",
+      "1.7.10",
+      "1.8.9",
+      "1.9.4"
+    ]
+  },
+  {
+    "name": "TASmod",
+    "links": {
+      "modrinth": "https://modrinth.com/mod/tasmod",
+      "github": null
+    },
+    "working": true,
+    "versions": ["1.12.2"]
   },
   {
     "name": "TNT Drop All",
     "links": {
-      "github": "https://github.com/tildejustin/tnt-drop-all",
-      "modrinth": "https://modrinth.com/mod/tnt-drop-all"
+      "modrinth": "https://modrinth.com/mod/tnt-drop-all",
+      "github": null
     },
     "working": true,
-    "versions": ["1.12.2", "1.11.2", "1.10.2", "1.9.4", "1.8.9"]
+    "versions": ["1.10.2", "1.11.2", "1.12.2", "1.8.9", "1.9.4"]
   },
   {
     "name": "ToggleSprint",
     "links": {
-      "modrinth": "https://modrinth.com/mod/togglesprint"
+      "modrinth": "https://modrinth.com/mod/togglesprint",
+      "github": null
     },
     "working": true,
     "versions": ["1.8.9"]
@@ -694,8 +1326,8 @@
   {
     "name": "Where-Is-My-Stuff",
     "links": {
-      "github": "https://github.com/MaheEvil/Where-Is-My-Stuff",
-      "modrinth": "https://modrinth.com/mod/JV1NYdVY"
+      "modrinth": "https://modrinth.com/mod/JV1NYdVY",
+      "github": "https://github.com/MaheEvil/Where-Is-My-Stuff"
     },
     "working": false,
     "versions": ["1.8.9"]
@@ -703,6 +1335,7 @@
   {
     "name": "WorldPreview",
     "links": {
+      "modrinth": null,
       "github": "https://github.com/Minecraft-Java-Edition-Speedrunning/worldpreview"
     },
     "working": true,
@@ -711,17 +1344,10 @@
   {
     "name": "Zombie Lag Fix",
     "links": {
-      "github": "https://github.com/baraclese/zombie-lag-fix"
+      "modrinth": "https://modrinth.com/mod/zombie-lag-fix",
+      "github": null
     },
     "working": true,
     "versions": ["1.6.4"]
-  },
-  {
-    "name": "OptiFine Unbound Zoom Fix",
-    "links": {
-      "github": "https://github.com/tildejustin/zoom-fix"
-    },
-    "working": true,
-    "versions": ["1.7.10"]
   }
 ]

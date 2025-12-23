@@ -1,4 +1,4 @@
-import { css, html, LitElement, unsafeCSS } from 'lit';
+import { css, html, LitElement, unsafeCSS, type PropertyValues } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { Task } from '@lit/task';
 import { getApiVersions, getGameVersions, getLoaderVersions } from '../utils/legacyfabric-meta';
@@ -14,7 +14,7 @@ export class Usage extends LitElement {
     yarnVersion = '571';
 
     @property({ type: String })
-    loaderVersion = '0.16.14';
+    loaderVersion = '0.17.3';
 
     @property({ type: String })
     apiVersion = '1.12.0';
@@ -80,6 +80,11 @@ gradlew migrateMappings --mappings <span class="hljs-string">"${this.yarnVersion
         `;
     }
 
+    firstUpdated(_changedProperties: PropertyValues): void {
+        // TODO: Remove this little hack
+        this.updateVersions({ target: { value: '1.8.9' } } as any);
+    }
+
     private initGameVersionsTask = new Task(this, {
         task: async () => {
             let gameVersions = await getGameVersions();
@@ -90,6 +95,8 @@ gradlew migrateMappings --mappings <span class="hljs-string">"${this.yarnVersion
 
     private async updateVersions(e: Event) {
         this.minecraftVersion = (e.target as HTMLSelectElement).value;
+
+        // TODO: Show error in the ui
 
         try {
             let loaderVersionsData = await getLoaderVersions(this.minecraftVersion);
@@ -109,6 +116,7 @@ gradlew migrateMappings --mappings <span class="hljs-string">"${this.yarnVersion
         }
     }
 
+    // TODO: Load highlightjs styles from node_modules?
     static styles = css`
         ${unsafeCSS(highlightjs_style_dark)}
 
