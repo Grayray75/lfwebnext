@@ -6,7 +6,7 @@ import { getApiVersions, getGameVersions, getLoaderVersions } from '../utils/leg
 import highlightjs_style_dark from 'highlight.js/styles/github-dark-dimmed.css?inline';
 
 @customElement('lf-usage')
-export class Usage extends LitElement {
+export class UsageElement extends LitElement {
     @property({ type: String })
     minecraftVersion = '1.8.9';
 

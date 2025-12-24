@@ -18,7 +18,7 @@ const images = [
 ];
 
 @customElement('lf-showcase-gallery')
-export class ShowcaseGallery extends LitElement {
+export class ShowcaseGalleryElement extends LitElement {
     @property({ type: Number })
     index = 0;
 

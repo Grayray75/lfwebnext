@@ -4,7 +4,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { getYarnDiff, getYarnVersions, type YarnDiffEntry } from '../utils/legacyfabric-meta';
 
 @customElement('lf-mappings-diff')
-export class MappingsDiff extends LitElement {
+export class MappingsDiffElement extends LitElement {
     @property({ type: String })
     minecraftVersion: string | null = null;
 
