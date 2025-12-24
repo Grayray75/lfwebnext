@@ -1,8 +1,7 @@
 import { Task } from '@lit/task';
-import { LitElement, html } from 'lit';
+import { LitElement, html, nothing } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
 import { getYarnDiff, getYarnVersions, type YarnDiffEntry } from '../utils/legacyfabric-meta';
-import { repeat } from 'lit/directives/repeat.js';
 
 @customElement('lf-mappings-diff')
 export class MappingsDiff extends LitElement {
@@ -15,14 +14,16 @@ export class MappingsDiff extends LitElement {
     @property({ type: Number })
     mappingTo: string | null = null;
 
-    @property({ type: Array })
-    classes: YarnDiffEntry[] = [];
+    @property({ type: Object })
+    diffClasses: Partial<Record<string, YarnDiffEntry[]>> = {};
 
-    @property({ type: Array })
-    fields: YarnDiffEntry[] = [];
+    @property({ type: Object })
+    diffFields: Partial<Record<string, YarnDiffEntry[]>> = {};
 
-    @property({ type: Array })
-    methods: YarnDiffEntry[] = [];
+    @property({ type: Object })
+    diffMethods: Partial<Record<string, YarnDiffEntry[]>> = {};
+
+    //#region Render
 
     render() {
         return html`
@@ -62,30 +63,60 @@ export class MappingsDiff extends LitElement {
 
                 <br />
 
-                <h3>Classes</h3>
-                <div id="diff-classes">
-                    <ul>
-                        ${repeat(this.classes, this.renderDiffEntry)}
-                    </ul>
-                </div>
-                <h3>Fields</h3>
-
-                <div id="diff-fields">
-                    <ul>
-                        ${repeat(this.fields, this.renderDiffEntry)}
-                    </ul>
-                </div>
-
-                <h3>Methods</h3>
-
-                <div id="diff-methods">
-                    <ul>
-                        ${repeat(this.methods, this.renderDiffEntry)}
-                    </ul>
-                </div>
+                ${this.renderTotalDiff()}
             </div>
         `;
     }
+
+    private renderTotalDiff() {
+        let htmlArray = [];
+
+        if (Object.keys(this.diffClasses).length > 0) {
+            htmlArray.push(html`
+                <h3>Classes</h3>
+                <div id="diff-classes">${Object.entries(this.diffClasses).map(([owner, diffs]) => this.renderDiffGroup(owner, diffs))}</div>
+            `);
+        }
+        if (Object.keys(this.diffFields).length > 0) {
+            htmlArray.push(html`
+                <h3>Fields</h3>
+                <div id="diff-fields">${Object.entries(this.diffFields).map(([owner, diffs]) => this.renderDiffGroup(owner, diffs))}</div>
+            `);
+        }
+        if (Object.keys(this.diffMethods).length > 0) {
+            htmlArray.push(html`
+                <h3>Methods</h3>
+                <div id="diff-methods">${Object.entries(this.diffMethods).map(([owner, diffs]) => this.renderDiffGroup(owner, diffs))}</div>
+            `);
+        }
+
+        return htmlArray;
+    }
+
+    private renderDiffGroup(owner: string, diffs?: YarnDiffEntry[]) {
+        if (owner == null || diffs == null) {
+            console.warn('renderDiffGroup was called with null!');
+            return nothing;
+        }
+
+        return html`
+            <h4>${owner}</h4>
+            <ul>
+                ${diffs.map((diff) => this.renderDiffEntry(diff))}
+            </ul>
+        `;
+    }
+
+    private renderDiffEntry(diff: YarnDiffEntry) {
+        return html`
+            <li>
+                ${diff.source} ${diff.sourceDesc} <br />
+                -> ${diff.target} ${diff.targetDesc}
+            </li>
+        `;
+    }
+
+    //#endregion
 
     private initYarnVersionsTask = new Task(this, {
         task: async () => {
@@ -112,18 +143,9 @@ export class MappingsDiff extends LitElement {
     private async updateDiff() {
         if (this.mappingFrom && this.mappingTo) {
             let diff = await getYarnDiff(this.mappingFrom, this.mappingTo);
-            this.classes = diff.classes;
-            this.methods = diff.methods;
-            this.fields = diff.fields;
+            this.diffClasses = Object.groupBy(diff.classes, (entry) => entry.owner);
+            this.diffFields = Object.groupBy(diff.fields, (entry) => entry.owner);
+            this.diffMethods = Object.groupBy(diff.methods, (entry) => entry.owner);
         }
-    }
-
-    private renderDiffEntry(diff: YarnDiffEntry) {
-        return html`
-            <li>
-                ${diff.source} ${diff.sourceDesc} <br />
-                -> ${diff.target} ${diff.targetDesc}
-            </li>
-        `;
     }
 }

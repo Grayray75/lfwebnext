@@ -2,10 +2,9 @@
   "singleQuote": true,
   "useTabs": false,
   "tabWidth": 4,
-  "printWidth": 160,
+  "printWidth": 150,
   "trailingComma": "none",
   "endOfLine": "auto",
-
   "overrides": [
     {
       "files": ["*.json", "*.yml"],

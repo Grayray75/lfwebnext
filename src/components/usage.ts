@@ -49,7 +49,8 @@ export class Usage extends LitElement {
     <span class="hljs-string">modImplementation "net.fabricmc:fabric-loader:${this.loaderVersion}"</span>
 
     <span class="hljs-comment">// Legacy-Fabric API</span>
-    modImplementation <span class="hljs-string">"net.legacyfabric.legacy-fabric-api:legacy-fabric-api:${this.apiVersion}+${this.minecraftVersion}"</span>
+    modImplementation <span class="hljs-string">"net.legacyfabric.legacy-fabric-api:legacy-fabric-api:${this.apiVersion}+${this
+                    .minecraftVersion}"</span>
 }
                 </code></pre>
             </div>
