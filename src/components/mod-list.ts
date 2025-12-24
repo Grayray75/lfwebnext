@@ -3,7 +3,7 @@ import { customElement, property } from 'lit/decorators.js';
 import { repeat } from 'lit/directives/repeat.js';
 import { map } from 'lit/directives/map.js';
 
-import type { ModEntry } from '../utils/mods.types';
+import type { ModEntry } from '../utils/mods';
 import mods from '../assets/mods.json';
 
 import CurseforgeIcon from '../assets/logos/curseforge.svg';

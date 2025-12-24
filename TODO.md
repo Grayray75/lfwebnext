@@ -6,3 +6,4 @@
 - [ ] Add optional light mode
 - [ ] Update mods list from og website
 - [ ] Auto fetch mods list from modrinth
+- [ ] Add mappings diff

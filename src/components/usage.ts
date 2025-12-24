@@ -70,13 +70,21 @@ export class Usage extends LitElement {
             <hr />
 
             <h2>Mappings Migration</h2>
-            <p>Mappings can be auto updated by using the following command. See the <a href="https://fabricmc.net/wiki/tutorial:migratemappings">wiki page</a> for more help.</p>
+            <p>
+                Mappings can be auto updated by using the following command. See the
+                <a href="https://fabricmc.net/wiki/tutorial:migratemappings">wiki page</a> for more help.
+            </p>
 
             <div name="code">
                 <pre><code class="bash hljs">
 gradlew migrateMappings --mappings <span class="hljs-string">"${this.yarnVersion}"</span>
                 </code></pre>
             </div>
+
+            <br />
+            <hr />
+
+            <lf-mappings-diff .minecraftVersion=${this.minecraftVersion}></lf-mappings-diff>
         `;
     }
 

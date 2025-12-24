@@ -42,7 +42,7 @@ type ModrinthModVersionInfo = {
     version_number: string;
     changelog: string;
     changelog_url: string | null;
-    date_published: string; // ISO 8601 timestamp
+    date_published: string;
     downloads: number;
     version_type: string;
     status: string;
@@ -63,4 +63,35 @@ type ModrinthModVersionInfo = {
 
 export async function getApiVersions(): Promise<ModrinthModVersionInfo[]> {
     return await getJson('https://api.modrinth.com/v2/project/legacy-fabric-api/version');
+}
+
+type YarnVersionInfo = {
+    gameVersion: string;
+    separator: string;
+    build: number;
+    maven: string;
+    version: string;
+    stable: boolean;
+};
+
+export async function getYarnVersions(minecraftVersion: string): Promise<YarnVersionInfo[]> {
+    return await getJson(`https://meta.legacyfabric.net/v2/versions/yarn/${minecraftVersion}`);
+}
+
+export type YarnDiffEntry = {
+    owner: string;
+    source: string;
+    target: string;
+    sourceDesc: string;
+    targetDesc: string;
+};
+
+type YarnDiffInfo = {
+    classes: YarnDiffEntry[];
+    fields: YarnDiffEntry[];
+    methods: YarnDiffEntry[];
+};
+
+export async function getYarnDiff(buildFrom: string, buildTo: string): Promise<YarnDiffInfo> {
+    return await getJson(`https://meta.legacyfabric.net/v2/diff/${buildFrom}/${buildTo}`);
 }
